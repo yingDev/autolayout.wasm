@@ -235,7 +235,7 @@ namespace evfl::test
 
     void mevfl()
 	{
-		auto input = "H:|[asdf]| [b(123)] [c]-(444@555)-|"
+		auto input = " \n  H:|[asdf]| [b(123)] [c]-(444@555)-|"
 					 "V:|-[a]-55%-[b]-|"
 					 "C:a.width(100)"
 					 "HV:|[x]|"

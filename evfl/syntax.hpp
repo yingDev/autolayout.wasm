@@ -247,7 +247,7 @@ namespace evfl
 
 	const rule<class multiExtendedVisualFormat, ast::MultiExtendedVisualFormat> multiExtendedVisualFormat = "multi-evfl";
 	auto const multiExtendedVisualFormat_def =
-			(
+			lineSeparator >> (
 				(
 						("C:" >> constraintFmtContent % spaces )
 					  | (orient >> (x3::attr(ast::ORIENT_NONE) >> visualFmtContent) % spaces )
