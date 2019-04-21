@@ -34,4 +34,15 @@ AutoLayout.ready.then(()=>
 	
 ```
 
+# build
+- `git clone git@github.com:yingDev/autolayout.wasm.git && cd autolayout.wasm`
+- make sure these are installed:
+    - [cmake](https://cmake.org/download/)
+    - [emsdk](https://github.com/emscripten-core/emsdk)
+    - [boost](https://www.boost.org/users/download/)
+- set these environment variables:
+    - `EMSCRIPTEN_CMAKE_TOOLCHAIN_FILE` (eg. `/Developer/emsdk/emscripten/1.38.30/cmake/Modules/Platform/Emscripten.cmake`)
+    - `BOOST_ROOT` (eg. `/usr/local/Cellar/boost/1.69.0`)
+- run `npm test`
+
 # todo: documentation
