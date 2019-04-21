@@ -1,6 +1,6 @@
 {
   "name": "autolayout.wasm",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "",
   "main": "dist/autolayout.js",
   "files": [
@@ -16,7 +16,10 @@
     "type": "git",
     "url": "git@github.com:yingDev/autolayout.wasm.git"
   },
-  "author": "",
+  "author": {
+    "name": "Ying Yuandong",
+    "email": "me@yingDev.com"
+  },
   "license": "ISC",
   "homepage": "git@github.com:yingDev/autolayout.wasm.git",
   "devDependencies": {
