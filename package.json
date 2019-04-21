@@ -1,0 +1,24 @@
+{
+  "name": "autolayout.wasm",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/autolayout.js",
+  "files": [
+    "dist/autolayout.js",
+    "dist/autolayout.wasm"
+  ],
+  "scripts": {
+    "build-autolayout": "rm -rf dist && mkdir dist && cd dist && cmake .. -DCMAKE_TOOLCHAIN_FILE=$EMSCRIPTEN_CMAKE_TOOLCHAIN_FILE -DBOOST_ROOT=$BOOST_ROOT && make -j 6",
+    "release": "npm run build-autolayout",
+    "test":"rm -rf cmake-build-test && mkdir cmake-build-test && cd cmake-build-test && cmake -DBOOST_ROOT=$BOOST_ROOT .. && make && ./autolayout"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yingDev/autolayout.wasm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "git@github.com:yingDev/autolayout.wasm.git",
+  "devDependencies": {
+  }
+}

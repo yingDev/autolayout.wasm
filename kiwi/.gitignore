@@ -1,0 +1,9 @@
+*.pyc
+*.pyd
+*.so
+
+build/
+dist/
+kiwisolver.egg-info/
+
+.vscode
