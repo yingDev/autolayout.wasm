@@ -1,7 +1,7 @@
 {
   "name": "autolayout.wasm",
   "version": "0.1.0",
-  "description": "",
+  "description": "fast AutoLayout & VFL for the Web. Written in C++, compiled to WASM using Emscripten.",
   "main": "dist/autolayout.js",
   "files": [
     "dist/autolayout.js",
