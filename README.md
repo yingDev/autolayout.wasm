@@ -17,7 +17,11 @@ import AutoLayout from "autolayout.wasm";
 AutoLayout.ready.then(()=>
 {
     let view =  new AutoLayout.View();
-    let cons = AutoLayout.parse_evfl("H:|-[a]-[b]-|");
+    let cons = AutoLayout.parse_evfl(`
+        H:|-[a(123)]-[b(456)]-| |~[c)]~|; 
+        V:|[a][b]|; 
+        C:d.w(50%).h(100).cx(0).cy(0)`
+    );
     view.raw_addConstraints(cons, false);
     
     view.update();
