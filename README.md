@@ -28,7 +28,7 @@ AutoLayout.ready.then(()=>
     for(let name in subViews)
     {
         let sv = subViews[name];
-        console.log(`${sv.left()}, ${sv.top()}, ${sv.width()}, ${sv.height()}`);
+        console.log(`${name}: ${sv.left()}, ${sv.top()}, ${sv.width()}, ${sv.height()}`);
     }
 });
 	
