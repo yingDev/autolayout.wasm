@@ -35,7 +35,6 @@ AutoLayout.ready.then(()=>
 ```
 
 # build
-- `git clone git@github.com:yingDev/autolayout.wasm.git && cd autolayout.wasm`
 - make sure these are installed:
     - [cmake](https://cmake.org/download/)
     - [emsdk](https://github.com/emscripten-core/emsdk)
